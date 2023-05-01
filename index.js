@@ -42,8 +42,6 @@ function validateForm(){
 
     var password = document.forms['myForm']["fpass"].value;
     if (password.length < 6){
-
-        // Quiz: create a logic to allow only those passwords which contain atleast one letter, one number and one special character and one uppercase letter
         seterror("pass", "*Password should be atleast 6 characters long!");
         returnval = false;
     }
